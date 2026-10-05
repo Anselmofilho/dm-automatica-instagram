@@ -1,0 +1,31 @@
+{
+  "name": "dm-automatica-instagram",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Agente de DM do Instagram que substitui o ManyChat: webhook da Meta, filtros, classificador com IA e resposta com link.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "mastra dev",
+    "build": "mastra build",
+    "start": "mastra start",
+    "typecheck": "tsc --noEmit",
+    "classificar": "tsx --env-file-if-exists=.env src/scripts/classificar.ts"
+  },
+  "dependencies": {
+    "@mastra/core": "1.68.0",
+    "@mastra/pg": "^1.25.0",
+    "pg": "^8.23.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/pg": "^8.23.1",
+    "mastra": "1.30.0",
+    "tsx": "^4.23.13",
+    "typescript": "^6.0.3"
+  }
+}

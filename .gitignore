@@ -1,0 +1,11 @@
+node_modules
+dist
+.mastra
+.env
+.env.*
+!.env.example
+*.db
+*.db-*
+*.duckdb
+*.duckdb.wal
+.DS_Store
